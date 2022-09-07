@@ -3,7 +3,7 @@
     console.log(data.data)
 </script>
 
-<div class="movie-detail">
+<div class="movie-details">
     <div class="img-container">
         <img src={'https://image.tmdb.org/t/p/original' + data.data.backdrop_path} alt={data.data.title}>
     </div>
