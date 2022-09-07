@@ -1,9 +1,10 @@
 <script>
     export let data
     console.log(data.data)
+    import { fly } from 'svelte/transition';
 </script>
 
-<div class="movie-details">
+<div class="movie-details" in:fly={{ y:50, duration:500, delay:500 }} out:fly={{ duration:500 }}>
     <div class="img-container">
         <img src={'https://image.tmdb.org/t/p/original' + data.data.backdrop_path} alt={data.data.title}>
     </div>
